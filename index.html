@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Digital Diary</h1>
+    <p>Catat dan bagikan pemikiran atau perasaan harianmu</p>
+  </header>
+
+  <main>
+    <section id="entry-form">
+      <h2>Tulis Entri Baru</h2>
+      <form id="diary-form">
+        <div>
+          <label for="entry-text">Cerita hari ini:</label><br>
+          <textarea id="entry-text" name="entryText" rows="6" placeholder="Tulis di sini..." required></textarea>
+        </div>
+        <div>
+          <label for="entry-image">Upload Gambar (opsional):</label><br>
+          <input type="file" id="entry-image" name="entryImage" accept="image/*">
+        </div>
+        <button type="submit">Simpan Entri</button>
+      </form>
+    </section>
+
+    <section id="entries">
+      <h2>Entri Sebelumnya</h2>
+      <div id="entries-list">
+        <!-- Entri akan muncul di sini -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
