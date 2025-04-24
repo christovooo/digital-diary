@@ -1,0 +1,118 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body dan layout utama */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Form entri baru */
+#entry-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+#entry-form h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #444;
+}
+#diary-form div {
+  margin-bottom: 15px;
+}
+#diary-form label {
+  font-weight: bold;
+}
+#diary-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 1rem;
+}
+#diary-form input[type="file"] {
+  font-size: 1rem;
+}
+#diary-form button {
+  background: #5c6bc0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+#diary-form button:hover {
+  background: #3f51b5;
+}
+
+/* Daftar entri */
+#entries h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #444;
+}
+#entries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.entry-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.entry-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.entry-card .entry-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+.entry-card .entry-text {
+  font-size: 1rem;
+  white-space: pre-wrap;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  #entry-form, .entry-card {
+    padding: 15px;
+  }
+}
